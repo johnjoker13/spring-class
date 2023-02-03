@@ -28,7 +28,7 @@ class GreetingControllerTest {
 	
 	@Test
 	public void greetingShouldReturnDefaultMessage() throws Exception {
-		assertThat(this._restTemplate.getForObject("http://localhost:" + _port + "/greeting", String.class)).contains("Hello, World");
+		assertThat(this._restTemplate.getForObject("http://localhost:" + _port + "/greeting", String.class)).contains("Hello, World!");
 	}
 	
 	@Test
